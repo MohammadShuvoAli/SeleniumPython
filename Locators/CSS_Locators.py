@@ -31,8 +31,7 @@ sleep(1)
 
 # Tag, class and attribute CSS Selector
 driver.find_element(By.CSS_SELECTOR, 'input.inputtext[data-testid="royal_email"]').send_keys('Tag, class and attribute CSS Selector')
-sleep(1)
-driver.find_element(By.CSS_SELECTOR, 'input.inputtext[data-testid="royal_email"]').clear()
+driver.find_element(By.CSS_SELECTOR, 'input.inputtext[data-testid="royal_pass"]').send_keys('1234567890')
 sleep(1)
 
 driver.quit()
