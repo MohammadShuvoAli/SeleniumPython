@@ -7,7 +7,7 @@ driver.implicitly_wait(5000)
 driver.get("https://demo.nopcommerce.com/")
 driver.maximize_window()
 
-# Searching elements using ID, Name & Class Locator
+# Searching element using ID, Name & Class Locator
 driver.find_element(By.ID, "small-searchterms").clear()
 driver.find_element(By.NAME, "q").send_keys("Apple")
 driver.find_element(By.CLASS_NAME, "search-box-button").click()
@@ -26,6 +26,12 @@ driver.back()
 driver.find_element(By.PARTIAL_LINK_TEXT, 'HTC').click()
 driver.back()
 
+# Counting no. of slides using find_elements
+slides = driver.find_elements(By.CLASS_NAME, "nivo-control")
+print(len(slides))      # 2 Slides
 
+# counting no. of links available in homepage using TAG_NAME locator
+links = driver.find_elements(By.TAG_NAME, 'a')
+print(len(links))   # 90 Links
 driver.quit()
 
