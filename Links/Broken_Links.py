@@ -10,7 +10,7 @@ driver.get("http://www.deadlinkcity.com/")
 all_links = driver.find_elements(By.TAG_NAME, 'a')
 
 count = 0
-#
+
 for link in all_links:
     url = link.get_attribute('href')
     try:
