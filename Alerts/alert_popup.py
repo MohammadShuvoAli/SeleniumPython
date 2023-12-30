@@ -16,5 +16,5 @@ print(alert_window.text)
 
 alert_window.accept() # ok
 
-time.sleep(10)
+time.sleep(5)
 driver.quit()
