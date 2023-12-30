@@ -1,5 +1,3 @@
-import time
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -21,11 +19,11 @@ for day in days:
     day_count += 1
 
 # selecting a single checkbox
-#days[2].click()
+days[2].click()
 
 # clicking on all checkbox
-#for day in days:
-#    day.click()
+for day in days:
+   day.click()
 
 # selecting multiple checkbox by choice
 for day in days:
@@ -36,13 +34,13 @@ for day in days:
 # select last 2 days
 # range(5, 7)
 # totatnumbecofelements-2=starting index
-# for i in range (len(days)-2, len(days)):
-#     days[i].click()
+for i in range (len(days)-2, len(days)):
+    days[i].click()
 
 # Select first 2 days
-# for i in range(len(days)):
-#     if i<2:
-#         days[i].click()
+for i in range(len(days)):
+    if i<2:
+        days[i].click()
 
 
 # clearing selected checkboxes
@@ -50,5 +48,4 @@ for day in days:
     if day.is_selected():
         day.click()
 
-time.sleep(2)
 driver.quit()
