@@ -6,7 +6,7 @@ driver = webdriver.Chrome()
 driver.maximize_window()
 driver.implicitly_wait(10)
 
-driver.get("https://demo.nopcommerce.com/")
+driver.get("https://swisnl.github.io/jQuery-contextMenu/demo.html")
 
 
 
