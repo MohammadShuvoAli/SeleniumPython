@@ -1,4 +1,3 @@
-import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -30,6 +29,13 @@ for r in range(2, no_of_rows+1):
     print()
 
 # read data based on condition
-
+# finding out book information written by "Mukesh"
+for r in range(2, no_of_rows+1):
+    author = driver.find_element(By.XPATH, '//*[@id="HTML1"]/div[1]/table/tbody/tr[' + str(r) + ']/td[2]').text
+    if author == "Mukesh":
+        book_name = driver.find_element(By.XPATH, '//*[@id="HTML1"]/div[1]/table/tbody/tr['+str(r)+']/td[1]').text
+        book_subject = driver.find_element(By.XPATH, '//*[@id="HTML1"]/div[1]/table/tbody/tr[' + str(r) + ']/td[3]').text
+        book_price = driver.find_element(By.XPATH, '//*[@id="HTML1"]/div[1]/table/tbody/tr[' + str(r) + ']/td[4]').text
+        print(book_name, author, book_subject, book_price)
 
 driver.quit()
