@@ -18,8 +18,7 @@ def chrome_setup():
 
 def edge_setup():
     # setting download location and changing setting for downloading PDF
-    # have open bug from selenium only for pdf file
-    preferences = {"download.default_directory": location, "plugins.always_open_pdf_externally": True}
+    preferences = {"download.default_directory": location, "plugins.always_open_pdf_externally": True} # have open bug from selenium only for pdf file
     ops = webdriver.EdgeOptions()
     ops.add_experimental_option("prefs", preferences)
 
