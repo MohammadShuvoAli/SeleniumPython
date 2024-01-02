@@ -10,4 +10,11 @@ for r in range(1, 6):
     for c in range(1, 4):
         sheet.cell(r, c).value = "Welcome"
 
+# """To store multiple data into rows and columns"""
+# data =[('Emp Id', 'Emp Name', 'Designation'),
+#        (1, 'XYZ', 'Manager'),
+#        (2, 'ABC', 'Consultant')]
+# for i in data:
+#     sheet.append(i)
+
 workbook.save(path)
