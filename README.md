@@ -3,7 +3,6 @@
 This repository contains a Selenium automation project with various modules for web testing. Each folder corresponds to a specific topic or functionality.
 
 ## Table of Contents
-- [Modules](#modules)
   - [Alerts](#alerts)
   - [Browser Windows](#browser-windows)
   - [Checkbox](#checkbox)
@@ -24,8 +23,6 @@ This repository contains a Selenium automation project with various modules for 
   - [Table](#table)
   - [Test Automation from Test Case](#test-automation-from-test-case)
   - [Wait Commands](#wait-commands)
-
-## Modules
 
 ### Alerts
 - `Alerts.py`: Module for handling browser alerts.
