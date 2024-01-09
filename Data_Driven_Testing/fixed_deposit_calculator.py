@@ -11,6 +11,14 @@ driver.implicitly_wait(10)
 
 driver.get("https://www.moneycontrol.com/fixed-income/calculator/state-bank-of-india-sbi/fixed-deposit-calculator-SBI-BS001.html")
 
+popup_notification = driver.find_element(By.XPATH, '//*[@id="wzrk-cancel"]')
+ad_popup = driver.find_element(By.XPATH, '//*[@id="Line_52"]')
+
+if popup_notification.is_displayed():
+    popup_notification.click()
+elif ad_popup.is_displayed():
+    ad_popup.click()
+
 file = os.getcwd() + "\\caldata.xlsx"
 rows = XLUtilities.getRowCount(file, "Sheet1")
 
